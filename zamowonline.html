@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="moje zdjecia">
+	<meta name="keywords" content="moje, zdjecia">
+	
+	<title>Piekarnia Miodolini</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" type="text/css"> 
+	<link href="https://fonts.googleapis.com/css?family=Milonga" rel="stylesheet">
+
+	
+	
+</head>
+<body>
+		<div class="container">
+			<div class="row">
+				<div class="logo col-lg-12">
+					<img src="img/logo.png" class="img-fluid">
+				</div>
+			</div>
+			<div class="menu">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="menubnt col-lg-2"><a href="index.html"> GLOWNA</a>
+					</div>
+					<div class="menubnt col-lg-2"><a href="onas.html"> O NAS</a>
+					</div>
+					<div class="menubnt col-lg-2"><a href="menu.html">	MENU</a>
+					</div>
+					<div class="menubnt col-lg-2" style="background-color:#541f13"><a href="zamowonline.html" style="color:#cf664e">	ZAMOW ONLINE</a>
+					</div>
+					<div class="menubnt col-lg-2"><a href="kontakt.html">	KONTAKT</a>
+					</div>
+					<div class="col-lg-1">
+					</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-2 main4"><img src="img/menu1.jpg" class="img-fluid seloffer b1">10zl</div>
+					<div class="col-lg-2 main4"><img src="img/menu2.jpg" class="img-fluid seloffer b2">3zl</div>
+					<div class="col-lg-2 main4"><img src="img/menu3.jpg" class="img-fluid seloffer b3">6zl</div>
+					<div class="col-lg-2 main4"><img src="img/menu4.jpg" class="img-fluid seloffer b4">7zl</div>
+					<div class="col-lg-2 main4"><img src="img/menu5.jpg" class="img-fluid seloffer b5">2zl</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-2 main4"><img src="img/slodycze1.jpg" class="img-fluid seloffer b6">4zl</div>
+					<div class="col-lg-2 main4"><img src="img/slodycze2.jpg" class="img-fluid seloffer b7">12zl</div>
+					<div class="col-lg-2 main4"><img src="img/slodycze3.jpg" class="img-fluid seloffer b8">7zl</div>
+					<div class="col-lg-2 main4"><img src="img/slodycze4.jpg" class="img-fluid seloffer b9">2zl</div>
+					<div class="col-lg-2 main4"><img src="img/slodycze5.jpg" class="img-fluid seloffer b10">9zl</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="col-lg-2 main4">
+					Ilosc: <input type="number" id="amount" onkeypress="return isNumberKey(event)">
+					</div>
+					<div class="col-lg-2 main4">
+						</br>
+						<button type="button" class="btn btn-primary" id="add">Dodaj</button>
+					</div>
+					<div class="col-lg-2 main4">
+						</br>
+						<button type="button" class="btn btn-danger" id="zero">Zeruj zamówienie</button>
+					</div>
+					<div class="col-lg-2 main4">
+						</br>
+						<button type="button" class="btn btn-warning" id="order">Twoje zamówienie</button>
+					</div>
+					<div class="col-lg-2 main4">
+						<p>Do zapłaty:</p>
+						<h6 class="amount"></h6>
+					</div>					
+				</div>
+				<div class="shop">
+				<p>TWOJE ZAMOWIENIE:</p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="footerbox col-lg-3">
+						<h4>ADRES</h4>
+						<p>500 Terry Francois St.San Francisco, CA 94158</p>
+					</div>
+					<div class="footerbox col-lg-4">
+						<h4>GODZINY OTWARCIA</h4>
+						<p>pon-pt: 8-20</br>sb: 10-16</p>
+					</div>
+					<div class="footerbox col-lg-3">
+						<h4>KONTAKT</h4>
+						<p>m.mioduszewski1995@gmail.com</p>
+						<p>Xxx-xxx-xxx</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-1"></div>
+					<div class="footerbox1 col-lg-10">© 2023 by Piekarnia Miodolini. Proudly created by Mateusz Mioduszewski</div>
+				</div>
+			</div>
+		</div>
+
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="effects.js"></script>
+	<script src="shop.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
